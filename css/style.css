@@ -1,0 +1,106 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+/* variables */
+:root {
+  --strong-cyan: hsl(171, 66%, 44%);
+  --light-blue: hsl(233, 100%, 69%);
+  --grayish-blue: hsl(201, 11%, 66%);
+  --dark-grayish-blue: hsl(210, 10%, 33%);
+}
+
+/* page reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: 'Bai Jamjuree', sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul,
+ul li {
+  text-indent: 0;
+  list-style-type: none;
+}
+
+button,
+button:focus,
+button:active {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+/* general styles */
+section {
+  padding: 80px 7%;
+}
+
+/* custom classes */
+.custom__button {
+  padding: 2rem 0;
+  font-size: 1.8rem;
+  color: #fff;
+  border-radius: 3rem;
+}
+
+/* landing section start */
+.landing {
+  height: 100vh;
+  text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('../assets/images/bg-header-mobile.png');
+}
+
+.landing__logo {
+  width: 125px;
+  height: 125px;
+  margin-bottom: 5rem;
+}
+
+.landing h1 {
+  font-weight: 600;
+  font-size: 3.2rem;
+  color: var(--dark-grayish-blue);
+}
+
+.landing p {
+  font-size: 1.6rem;
+  color: var(--grayish-blue);
+  line-height: 2.5rem;
+  margin-top: 2rem;
+  margin-bottom: 3.5rem;
+}
+
+.landing__buttons {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+.landing__buttons > button:nth-child(1) {
+  border-bottom: 2px solid #166a5d;
+  background-color: var(--strong-cyan);
+}
+
+.landing__buttons > button:nth-child(2) {
+  border-bottom: 2px solid hsl(233, 44%, 48%);
+  background-color: var(--light-blue);
+}
+/* landing section end */
