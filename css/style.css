@@ -1,5 +1,5 @@
 /* fonts */
-@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
 
 /* variables */
 :root {
@@ -25,7 +25,7 @@ html {
 }
 
 body {
-  font-family: 'Bai Jamjuree', sans-serif;
+  font-family: "Bai Jamjuree", sans-serif;
 }
 
 img {
@@ -47,7 +47,8 @@ button:active {
 }
 
 /* general styles */
-section, footer {
+section,
+footer {
   padding: 60px 7%;
 }
 
@@ -63,6 +64,8 @@ p {
   font-size: 1.8rem;
   color: #fff;
   border-radius: 3rem;
+  -webkit-transition: opacity 0.5s;
+  -o-transition: opacity 0.5s;
   transition: opacity 0.5s;
 }
 
@@ -89,7 +92,7 @@ p {
   text-align: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url('../assets/images/bg-header-mobile.png');
+  background-image: url("../assets/images/bg-header-mobile.png");
 }
 
 .landing__logo {
@@ -113,7 +116,12 @@ p {
 }
 
 .landing__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   gap: 1rem 2rem;
 }
@@ -136,20 +144,34 @@ p {
 
 @media (min-width: 576px) {
   .landing {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
-    background-image: url('../assets/images/bg-header-desktop.png');
+    background-image: url("../assets/images/bg-header-desktop.png");
   }
-  
+
   .landing p {
     max-width: 50rem;
     margin: 2rem auto 3.5rem;
   }
 
   .landing__buttons {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
   }
 }
@@ -175,23 +197,37 @@ p {
   .services {
     padding: 80px 0;
   }
-  
+
   .services__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-column-gap: 10rem;
+    -moz-column-gap: 10rem;
     column-gap: 10rem;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
   }
 
   .services__image {
     width: 50%;
     aspect-ratio: 1.31 / 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     margin-bottom: 0;
   }
-  
+
   .services__container {
     width: 50%;
   }
@@ -212,9 +248,16 @@ p {
 
 /* features section start */
 .features__container {
-  display: flex;  
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   gap: 3rem 3rem;
 }
@@ -237,17 +280,29 @@ p {
 
 /* companies section start */
 .companies__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   gap: 5rem 5rem;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 /* companies section end */
 
 /* footer start */
 footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   background-color: #f5f6f8;
 }
@@ -279,21 +334,39 @@ footer ul li:not(:last-child) {
 }
 
 footer .social__media {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 3rem 3rem;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   margin-top: 3rem;
 }
 
+footer .social__media img {
+  cursor: pointer;
+}
+
 @media (min-width: 576px) {
   footer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
   }
 
-  footer > img, footer ul {
+  footer > img,
+  footer ul {
     margin: 0;
   }
 
